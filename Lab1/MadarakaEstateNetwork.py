@@ -93,7 +93,7 @@ edge_col = ['blue' if not node in route_list else 'peru' for node in G.nodes()]
 print (node_col)
 print (peru_colored_edges)
 print (edge_col)
-
+#
 arc_weight=nx.get_edge_attributes(G,'weight')
 nx.draw_networkx(G, node_pos,node_color= node_col, node_size=1000)
 nx.draw_networkx_edges(G, node_pos,width=2,edge_color= edge_col)
